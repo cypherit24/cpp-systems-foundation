@@ -42,4 +42,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/main.dir/DependInfo.cmake"
   "CMakeFiles/pointer.dir/DependInfo.cmake"
+  "CMakeFiles/class_struct.dir/DependInfo.cmake"
+  "CMakeFiles/static1.dir/DependInfo.cmake"
   )

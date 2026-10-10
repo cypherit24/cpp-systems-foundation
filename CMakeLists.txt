@@ -15,4 +15,13 @@ add_executable(pointer
     02_pointers/main.cpp
 )
 
+add_executable(class_struct
+    03.classes_structs/class.cpp
+)
+
+add_executable(static1
+    03.classes_structs/static_main.cpp
+    03.classes_structs/static.cpp
+)
+
 target_include_directories(main PRIVATE include)

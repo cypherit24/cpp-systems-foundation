@@ -65,6 +65,8 @@ CMAKE_BINARY_DIR = /workspaces/cpp-systems-foundation/build
 # The main recursive "all" target.
 all: CMakeFiles/main.dir/all
 all: CMakeFiles/pointer.dir/all
+all: CMakeFiles/class_struct.dir/all
+all: CMakeFiles/static1.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -74,6 +76,8 @@ preinstall:
 # The main recursive "clean" target.
 clean: CMakeFiles/main.dir/clean
 clean: CMakeFiles/pointer.dir/clean
+clean: CMakeFiles/class_struct.dir/clean
+clean: CMakeFiles/static1.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -83,7 +87,7 @@ clean: CMakeFiles/pointer.dir/clean
 CMakeFiles/main.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspaces/cpp-systems-foundation/build/CMakeFiles --progress-num=1,2,3 "Built target main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspaces/cpp-systems-foundation/build/CMakeFiles --progress-num=3,4,5 "Built target main"
 .PHONY : CMakeFiles/main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -109,7 +113,7 @@ CMakeFiles/main.dir/clean:
 CMakeFiles/pointer.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pointer.dir/build.make CMakeFiles/pointer.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pointer.dir/build.make CMakeFiles/pointer.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspaces/cpp-systems-foundation/build/CMakeFiles --progress-num=4,5 "Built target pointer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspaces/cpp-systems-foundation/build/CMakeFiles --progress-num=6,7 "Built target pointer"
 .PHONY : CMakeFiles/pointer.dir/all
 
 # Build rule for subdir invocation for target.
@@ -127,6 +131,58 @@ pointer: CMakeFiles/pointer.dir/rule
 CMakeFiles/pointer.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pointer.dir/build.make CMakeFiles/pointer.dir/clean
 .PHONY : CMakeFiles/pointer.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/class_struct.dir
+
+# All Build rule for target.
+CMakeFiles/class_struct.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/class_struct.dir/build.make CMakeFiles/class_struct.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/class_struct.dir/build.make CMakeFiles/class_struct.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspaces/cpp-systems-foundation/build/CMakeFiles --progress-num=1,2 "Built target class_struct"
+.PHONY : CMakeFiles/class_struct.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/class_struct.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/cpp-systems-foundation/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/class_struct.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/cpp-systems-foundation/build/CMakeFiles 0
+.PHONY : CMakeFiles/class_struct.dir/rule
+
+# Convenience name for target.
+class_struct: CMakeFiles/class_struct.dir/rule
+.PHONY : class_struct
+
+# clean rule for target.
+CMakeFiles/class_struct.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/class_struct.dir/build.make CMakeFiles/class_struct.dir/clean
+.PHONY : CMakeFiles/class_struct.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/static1.dir
+
+# All Build rule for target.
+CMakeFiles/static1.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/static1.dir/build.make CMakeFiles/static1.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/static1.dir/build.make CMakeFiles/static1.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspaces/cpp-systems-foundation/build/CMakeFiles --progress-num=8,9,10 "Built target static1"
+.PHONY : CMakeFiles/static1.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/static1.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/cpp-systems-foundation/build/CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/static1.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/cpp-systems-foundation/build/CMakeFiles 0
+.PHONY : CMakeFiles/static1.dir/rule
+
+# Convenience name for target.
+static1: CMakeFiles/static1.dir/rule
+.PHONY : static1
+
+# clean rule for target.
+CMakeFiles/static1.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/static1.dir/build.make CMakeFiles/static1.dir/clean
+.PHONY : CMakeFiles/static1.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

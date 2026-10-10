@@ -142,6 +142,32 @@ pointer/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pointer.dir/build.make CMakeFiles/pointer.dir/build
 .PHONY : pointer/fast
 
+#=============================================================================
+# Target rules for targets named class_struct
+
+# Build rule for target.
+class_struct: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 class_struct
+.PHONY : class_struct
+
+# fast build rule for target.
+class_struct/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/class_struct.dir/build.make CMakeFiles/class_struct.dir/build
+.PHONY : class_struct/fast
+
+#=============================================================================
+# Target rules for targets named static1
+
+# Build rule for target.
+static1: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 static1
+.PHONY : static1
+
+# fast build rule for target.
+static1/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/static1.dir/build.make CMakeFiles/static1.dir/build
+.PHONY : static1/fast
+
 01_compilation_and_linking/log.o: 01_compilation_and_linking/log.cpp.o
 .PHONY : 01_compilation_and_linking/log.o
 
@@ -214,6 +240,78 @@ pointer/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pointer.dir/build.make CMakeFiles/pointer.dir/02_pointers/main.cpp.s
 .PHONY : 02_pointers/main.cpp.s
 
+03.classes_structs/class.o: 03.classes_structs/class.cpp.o
+.PHONY : 03.classes_structs/class.o
+
+# target to build an object file
+03.classes_structs/class.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/class_struct.dir/build.make CMakeFiles/class_struct.dir/03.classes_structs/class.cpp.o
+.PHONY : 03.classes_structs/class.cpp.o
+
+03.classes_structs/class.i: 03.classes_structs/class.cpp.i
+.PHONY : 03.classes_structs/class.i
+
+# target to preprocess a source file
+03.classes_structs/class.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/class_struct.dir/build.make CMakeFiles/class_struct.dir/03.classes_structs/class.cpp.i
+.PHONY : 03.classes_structs/class.cpp.i
+
+03.classes_structs/class.s: 03.classes_structs/class.cpp.s
+.PHONY : 03.classes_structs/class.s
+
+# target to generate assembly for a file
+03.classes_structs/class.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/class_struct.dir/build.make CMakeFiles/class_struct.dir/03.classes_structs/class.cpp.s
+.PHONY : 03.classes_structs/class.cpp.s
+
+03.classes_structs/static.o: 03.classes_structs/static.cpp.o
+.PHONY : 03.classes_structs/static.o
+
+# target to build an object file
+03.classes_structs/static.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/static1.dir/build.make CMakeFiles/static1.dir/03.classes_structs/static.cpp.o
+.PHONY : 03.classes_structs/static.cpp.o
+
+03.classes_structs/static.i: 03.classes_structs/static.cpp.i
+.PHONY : 03.classes_structs/static.i
+
+# target to preprocess a source file
+03.classes_structs/static.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/static1.dir/build.make CMakeFiles/static1.dir/03.classes_structs/static.cpp.i
+.PHONY : 03.classes_structs/static.cpp.i
+
+03.classes_structs/static.s: 03.classes_structs/static.cpp.s
+.PHONY : 03.classes_structs/static.s
+
+# target to generate assembly for a file
+03.classes_structs/static.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/static1.dir/build.make CMakeFiles/static1.dir/03.classes_structs/static.cpp.s
+.PHONY : 03.classes_structs/static.cpp.s
+
+03.classes_structs/static_main.o: 03.classes_structs/static_main.cpp.o
+.PHONY : 03.classes_structs/static_main.o
+
+# target to build an object file
+03.classes_structs/static_main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/static1.dir/build.make CMakeFiles/static1.dir/03.classes_structs/static_main.cpp.o
+.PHONY : 03.classes_structs/static_main.cpp.o
+
+03.classes_structs/static_main.i: 03.classes_structs/static_main.cpp.i
+.PHONY : 03.classes_structs/static_main.i
+
+# target to preprocess a source file
+03.classes_structs/static_main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/static1.dir/build.make CMakeFiles/static1.dir/03.classes_structs/static_main.cpp.i
+.PHONY : 03.classes_structs/static_main.cpp.i
+
+03.classes_structs/static_main.s: 03.classes_structs/static_main.cpp.s
+.PHONY : 03.classes_structs/static_main.s
+
+# target to generate assembly for a file
+03.classes_structs/static_main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/static1.dir/build.make CMakeFiles/static1.dir/03.classes_structs/static_main.cpp.s
+.PHONY : 03.classes_structs/static_main.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -222,8 +320,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... class_struct"
 	@echo "... main"
 	@echo "... pointer"
+	@echo "... static1"
 	@echo "... 01_compilation_and_linking/log.o"
 	@echo "... 01_compilation_and_linking/log.i"
 	@echo "... 01_compilation_and_linking/log.s"
@@ -233,6 +333,15 @@ help:
 	@echo "... 02_pointers/main.o"
 	@echo "... 02_pointers/main.i"
 	@echo "... 02_pointers/main.s"
+	@echo "... 03.classes_structs/class.o"
+	@echo "... 03.classes_structs/class.i"
+	@echo "... 03.classes_structs/class.s"
+	@echo "... 03.classes_structs/static.o"
+	@echo "... 03.classes_structs/static.i"
+	@echo "... 03.classes_structs/static.s"
+	@echo "... 03.classes_structs/static_main.o"
+	@echo "... 03.classes_structs/static_main.i"
+	@echo "... 03.classes_structs/static_main.s"
 .PHONY : help
 
 
