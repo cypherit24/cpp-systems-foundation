@@ -1,9 +1,18 @@
-cmake_minimum_required(VERSION 3.22)
-project(CppSystemsFoundation VERSION 1.0 CXX)
+cmake_minimum_required(VERSION 3.16)
+project(cpp_study LANGUAGES CXX)
+
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 
-add_subdirectory(01_compilation_and_linking)
+add_executable(main
+    01_compilation_and_linking/log.cpp
+    01_compilation_and_linking/main.cpp
+)
+
+add_executable(pointer
+    02_pointers/main.cpp
+)
+
+target_include_directories(main PRIVATE include)

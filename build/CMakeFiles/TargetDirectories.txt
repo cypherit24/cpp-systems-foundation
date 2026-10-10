@@ -1,0 +1,4 @@
+/workspaces/cpp-systems-foundation/build/CMakeFiles/main.dir
+/workspaces/cpp-systems-foundation/build/CMakeFiles/pointer.dir
+/workspaces/cpp-systems-foundation/build/CMakeFiles/edit_cache.dir
+/workspaces/cpp-systems-foundation/build/CMakeFiles/rebuild_cache.dir

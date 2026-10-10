@@ -1,0 +1,20 @@
+[
+{
+  "directory": "/workspaces/cpp-systems-foundation/build",
+  "command": "/usr/bin/g++  -I/workspaces/cpp-systems-foundation/include -g -std=gnu++17 -o CMakeFiles/main.dir/01_compilation_and_linking/log.cpp.o -c /workspaces/cpp-systems-foundation/01_compilation_and_linking/log.cpp",
+  "file": "/workspaces/cpp-systems-foundation/01_compilation_and_linking/log.cpp",
+  "output": "CMakeFiles/main.dir/01_compilation_and_linking/log.cpp.o"
+},
+{
+  "directory": "/workspaces/cpp-systems-foundation/build",
+  "command": "/usr/bin/g++  -I/workspaces/cpp-systems-foundation/include -g -std=gnu++17 -o CMakeFiles/main.dir/01_compilation_and_linking/main.cpp.o -c /workspaces/cpp-systems-foundation/01_compilation_and_linking/main.cpp",
+  "file": "/workspaces/cpp-systems-foundation/01_compilation_and_linking/main.cpp",
+  "output": "CMakeFiles/main.dir/01_compilation_and_linking/main.cpp.o"
+},
+{
+  "directory": "/workspaces/cpp-systems-foundation/build",
+  "command": "/usr/bin/g++   -g -std=gnu++17 -o CMakeFiles/pointer.dir/02_pointers/main.cpp.o -c /workspaces/cpp-systems-foundation/02_pointers/main.cpp",
+  "file": "/workspaces/cpp-systems-foundation/02_pointers/main.cpp",
+  "output": "CMakeFiles/pointer.dir/02_pointers/main.cpp.o"
+}
+]
