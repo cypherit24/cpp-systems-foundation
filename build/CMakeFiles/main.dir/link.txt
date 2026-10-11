@@ -1,1 +1,0 @@
-/usr/bin/g++ -g CMakeFiles/main.dir/01_compilation_and_linking/log.cpp.o CMakeFiles/main.dir/01_compilation_and_linking/main.cpp.o -o main 
