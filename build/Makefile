@@ -288,30 +288,6 @@ static1/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/static1.dir/build.make CMakeFiles/static1.dir/03.classes_structs/static.cpp.s
 .PHONY : 03.classes_structs/static.cpp.s
 
-03.classes_structs/static_main.o: 03.classes_structs/static_main.cpp.o
-.PHONY : 03.classes_structs/static_main.o
-
-# target to build an object file
-03.classes_structs/static_main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/static1.dir/build.make CMakeFiles/static1.dir/03.classes_structs/static_main.cpp.o
-.PHONY : 03.classes_structs/static_main.cpp.o
-
-03.classes_structs/static_main.i: 03.classes_structs/static_main.cpp.i
-.PHONY : 03.classes_structs/static_main.i
-
-# target to preprocess a source file
-03.classes_structs/static_main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/static1.dir/build.make CMakeFiles/static1.dir/03.classes_structs/static_main.cpp.i
-.PHONY : 03.classes_structs/static_main.cpp.i
-
-03.classes_structs/static_main.s: 03.classes_structs/static_main.cpp.s
-.PHONY : 03.classes_structs/static_main.s
-
-# target to generate assembly for a file
-03.classes_structs/static_main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/static1.dir/build.make CMakeFiles/static1.dir/03.classes_structs/static_main.cpp.s
-.PHONY : 03.classes_structs/static_main.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -339,9 +315,6 @@ help:
 	@echo "... 03.classes_structs/static.o"
 	@echo "... 03.classes_structs/static.i"
 	@echo "... 03.classes_structs/static.s"
-	@echo "... 03.classes_structs/static_main.o"
-	@echo "... 03.classes_structs/static_main.i"
-	@echo "... 03.classes_structs/static_main.s"
 .PHONY : help
 
 

@@ -20,7 +20,6 @@ add_executable(class_struct
 )
 
 add_executable(static1
-    03.classes_structs/static_main.cpp
     03.classes_structs/static.cpp
 )
 

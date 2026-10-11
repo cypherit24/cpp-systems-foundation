@@ -165,12 +165,12 @@ CMakeFiles/class_struct.dir/clean:
 CMakeFiles/static1.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/static1.dir/build.make CMakeFiles/static1.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/static1.dir/build.make CMakeFiles/static1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspaces/cpp-systems-foundation/build/CMakeFiles --progress-num=8,9,10 "Built target static1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspaces/cpp-systems-foundation/build/CMakeFiles --progress-num=8,9 "Built target static1"
 .PHONY : CMakeFiles/static1.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/static1.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/cpp-systems-foundation/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/cpp-systems-foundation/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/static1.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/cpp-systems-foundation/build/CMakeFiles 0
 .PHONY : CMakeFiles/static1.dir/rule

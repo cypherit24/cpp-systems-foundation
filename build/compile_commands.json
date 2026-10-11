@@ -25,12 +25,6 @@
 },
 {
   "directory": "/workspaces/cpp-systems-foundation/build",
-  "command": "/usr/bin/g++   -g -std=gnu++17 -o CMakeFiles/static1.dir/03.classes_structs/static_main.cpp.o -c /workspaces/cpp-systems-foundation/03.classes_structs/static_main.cpp",
-  "file": "/workspaces/cpp-systems-foundation/03.classes_structs/static_main.cpp",
-  "output": "CMakeFiles/static1.dir/03.classes_structs/static_main.cpp.o"
-},
-{
-  "directory": "/workspaces/cpp-systems-foundation/build",
   "command": "/usr/bin/g++   -g -std=gnu++17 -o CMakeFiles/static1.dir/03.classes_structs/static.cpp.o -c /workspaces/cpp-systems-foundation/03.classes_structs/static.cpp",
   "file": "/workspaces/cpp-systems-foundation/03.classes_structs/static.cpp",
   "output": "CMakeFiles/static1.dir/03.classes_structs/static.cpp.o"
