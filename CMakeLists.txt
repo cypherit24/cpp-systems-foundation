@@ -13,6 +13,13 @@ find_package(geometry_msgs REQUIRED)
 add_executable(first_robot_node
     move_object_by_robot/firstrobotnode.cpp
 )
+add_executable(second_robot_subscriber
+    move_object_by_robot/second_robot_subscriber.cpp
+)
+
+add_executable(cmd_vel_doubler
+    move_object_by_robot/cmd_vel_doubler.cpp
+)
 
 # 3. 실행 파일에 ROS 2(rclcpp) 라이브러리 연결
 ament_target_dependencies(first_robot_node
@@ -20,9 +27,20 @@ ament_target_dependencies(first_robot_node
     geometry_msgs
 )
 
+ament_target_dependencies(second_robot_subscriber
+    rclcpp
+    geometry_msgs
+)
+
+ament_target_dependencies(cmd_vel_doubler
+    rclcpp 
+    geometry_msgs)
+
 # 4. colcon build 후 실행 파일이 설치될 경로 지정
 install(TARGETS
     first_robot_node
+    second_robot_subscriber
+    cmd_vel_doubler
     DESTINATION lib/${PROJECT_NAME}
 )
 
