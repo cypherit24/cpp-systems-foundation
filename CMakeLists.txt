@@ -7,6 +7,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 # 1. ROS 2 C++ 필수 라이브러리 검색
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
+find_package(geometry_msgs REQUIRED)
 
 # 2. 실행 파일 생성
 add_executable(first_robot_node
@@ -16,6 +17,7 @@ add_executable(first_robot_node
 # 3. 실행 파일에 ROS 2(rclcpp) 라이브러리 연결
 ament_target_dependencies(first_robot_node
     rclcpp
+    geometry_msgs
 )
 
 # 4. colcon build 후 실행 파일이 설치될 경로 지정
